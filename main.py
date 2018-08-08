@@ -31,7 +31,11 @@ def rps():
     comp = random.choice(["r", "s", "p"])
     user = input("Rock, Paper or Scissors?(R,P,S): ")
 
-    if comp == lose[user.lower()]:
+    if user.lower() not in ["r", "s", "p"]:
+        print("INVALID INPUT")
+        print()
+        rps()
+    elif comp == lose[user.lower()]:
         print("You played: ", user, "\nComputer played: ", comp)
         print("You have lost!")
         print()
@@ -46,10 +50,6 @@ def rps():
         print("You have won!")
         print()
         replay()
-    else:
-        print("INVALID INPUT")
-        print()
-        rps()
 
 
 def init():
