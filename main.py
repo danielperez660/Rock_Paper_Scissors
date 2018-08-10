@@ -1,6 +1,5 @@
 import random
 
-
 def m():
     initm = input("Want to play Rock, Paper, Scissors?(Y/N): ")
 
@@ -61,3 +60,4 @@ def init():
 
 
 init()
+
