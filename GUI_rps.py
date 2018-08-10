@@ -26,11 +26,11 @@ class UI:
                 label1.configure(text="You Drew!\nYou played:" + val + "\nComputer played: " + comp)
                 top.config(bg="SystemButtonFace")
                 label1.config(bg="SystemButtonFace")
-            elif comp == lose[val]:
+            elif comp != lose[val]:
                 label1.configure(text="You Won!\nYou played:" + val + "\nComputer played: " + comp)
                 top.config(bg="green")
                 label1.config(bg="green")
-            elif comp != lose[val]:
+            elif comp == lose[val]:
                 label1.configure(text="You Lost!\nYou played:" + val + "\nComputer played: " + comp)
                 top.config(bg="red")
                 label1.config(bg="red")
